@@ -11,7 +11,8 @@ export const styles = StyleSheet.create({
     height: 320,
     justifyContent: 'flex-end',
     borderRadius: 8,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    
 
   },
   footer: {
@@ -19,6 +20,7 @@ export const styles = StyleSheet.create({
     height: 102,
     padding: 16,
     justifyContent: 'center'
+    
   },
   name: {
     color: THEME.COLORS.TEXT,

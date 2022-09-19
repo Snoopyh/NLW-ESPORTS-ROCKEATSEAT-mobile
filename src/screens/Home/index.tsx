@@ -9,6 +9,8 @@ import { Heading } from '../../components/Heading';
 
 import  logoImg  from '../../assets/logo-nlw-esports.png';
 import { styles } from './styles';
+import { $MYIP } from '../../../MyIp/myIP.';
+
 
 
 export function Home() {
@@ -23,7 +25,7 @@ export function Home() {
 
 
   useEffect(() => {
-    fetch('http://192.168.18.22:3333/games')
+    fetch(`http://${$MYIP}/games`)
       .then(response => response.json())
       .then(data => setGames(data));
   },[]);

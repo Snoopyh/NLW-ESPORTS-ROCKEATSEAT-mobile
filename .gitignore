@@ -1,4 +1,5 @@
 node_modules/
+Myip/
 .expo/
 dist/
 npm-debug.*

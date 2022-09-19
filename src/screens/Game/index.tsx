@@ -15,6 +15,8 @@ import { Heading } from '../../components/Heading';
 import { Background } from '../../components/Background';
 import { DuoCard , DuoCardProps } from '../../components/DuoCard';
 import { DuoMatch } from '../../components/DuoMatch';
+import { $MYIP } from '../../../MyIp/myIP.';
+
 
 
 
@@ -28,7 +30,7 @@ export function Game() {
   const game = route.params as GameParams;
 
   async function getDiscordUser(adsId: string){
-    fetch(`http://192.168.18.22:3333/ads/${adsId}/discord`)
+    fetch(`http://${$MYIP}/ads/${adsId}/discord`)
       .then(response => response.json())
       .then(data => {setDiscordDuoSelected(data.discord);
       });
